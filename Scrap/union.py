@@ -3,8 +3,8 @@ import pandas as pd
 
 # Rutas de los archivos CSV y su origen (rutas relativas desde la ubicación del script)
 csv_files = {
-    'bahia_manza': 'Data/bahiamansa_format.csv',
-    'bahia_brava': 'Data/bahiabrava_format.csv'
+    'bahia_manza': 'Data/bahia_mansa.csv',
+    'bahia_brava': 'Data/bahia_brava.csv'
 }
 
 # Lista para almacenar todos los DataFrames con la columna de origen
@@ -29,7 +29,7 @@ if dfs:
     combined_df = pd.concat(dfs, ignore_index=True)
 
     # Guardar el DataFrame combinado en un nuevo archivo CSV
-    combined_csv_path = os.path.join(current_dir, 'combined_data.csv')
+    combined_csv_path = os.path.join(current_dir, 'Data/tiktok_data.csv')
     combined_df.to_csv(combined_csv_path, index=False)
 
     print(f"Datos combinados guardados en: {combined_csv_path}")
