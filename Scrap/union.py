@@ -3,7 +3,7 @@ import pandas as pd
 
 # Rutas de los archivos CSV y su origen (rutas relativas desde la ubicación del script)
 csv_files = {
-    'bahia_manza': 'Data/bahia_mansa.csv',
+    'bahia_mansa': 'Data/bahia_mansa.csv',
     'bahia_brava': 'Data/bahia_brava.csv'
 }
 
